@@ -1,0 +1,170 @@
+[OID]
+# ----------  FIPS 203 / 204 / 205  +  draft & prototype algorithms  ----------
+MLDSA44                         = 2.16.840.1.101.3.4.3.17
+mldsa44                         = ${MLDSA44}
+MLDSA65                         = 2.16.840.1.101.3.4.3.18
+mldsa65                         = ${MLDSA65}
+MLDSA87                         = 2.16.840.1.101.3.4.3.19
+mldsa87                         = ${MLDSA87}
+SLHDSA_SHA2_128S                = 2.16.840.1.101.3.4.3.20
+slhdsa_sha2_128s                = ${SLHDSA_SHA2_128S}
+SLHDSA_SHA2_128F                = 2.16.840.1.101.3.4.3.21
+slhdsa_sha2_128f                = ${SLHDSA_SHA2_128F}
+SLHDSA_SHA2_192S                = 2.16.840.1.101.3.4.3.22
+slhdsa_sha2_192s                = ${SLHDSA_SHA2_192S}
+SLHDSA_SHA2_192F                = 2.16.840.1.101.3.4.3.23
+slhdsa_sha2_192f                = ${SLHDSA_SHA2_192F}
+SLHDSA_SHA2_256S                = 2.16.840.1.101.3.4.3.24
+slhdsa_sha2_256s                = ${SLHDSA_SHA2_256S}
+SLHDSA_SHA2_256F                = 2.16.840.1.101.3.4.3.25
+slhdsa_sha2_256f                = ${SLHDSA_SHA2_256F}
+SLHDSA_SHAKE_128S               = 2.16.840.1.101.3.4.3.26
+slhdsa_shake_128s               = ${SLHDSA_SHAKE_128S}
+SLHDSA_SHAKE_128F               = 2.16.840.1.101.3.4.3.27
+slhdsa_shake_128f               = ${SLHDSA_SHAKE_128F}
+SLHDSA_SHAKE_192S               = 2.16.840.1.101.3.4.3.28
+slhdsa_shake_192s               = ${SLHDSA_SHAKE_192S}
+SLHDSA_SHAKE_192F               = 2.16.840.1.101.3.4.3.29
+slhdsa_shake_192f               = ${SLHDSA_SHAKE_192F}
+SLHDSA_SHAKE_256S               = 2.16.840.1.101.3.4.3.30
+slhdsa_shake_256s               = ${SLHDSA_SHAKE_256S}
+SLHDSA_SHAKE_256F               = 2.16.840.1.101.3.4.3.31
+slhdsa_shake_256f               = ${SLHDSA_SHAKE_256F}
+
+HASH_MLDSA44                    = 2.16.840.1.101.3.4.3.32
+hash_mldsa44                    = ${HASH_MLDSA44}
+HASH_MLDSA65                    = 2.16.840.1.101.3.4.3.33
+hash_mldsa65                    = ${HASH_MLDSA65}
+HASH_MLDSA87                    = 2.16.840.1.101.3.4.3.34
+hash_mldsa87                    = ${HASH_MLDSA87}
+HASH_SLHDSA_SHA2_128S           = 2.16.840.1.101.3.4.3.35
+hash_slhdsa_sha2_128s           = ${HASH_SLHDSA_SHA2_128S}
+HASH_SLHDSA_SHA2_128F           = 2.16.840.1.101.3.4.3.36
+hash_slhdsa_sha2_128f           = ${HASH_SLHDSA_SHA2_128F}
+HASH_SLHDSA_SHA2_192S           = 2.16.840.1.101.3.4.3.37
+hash_slhdsa_sha2_192s           = ${HASH_SLHDSA_SHA2_192S}
+HASH_SLHDSA_SHA2_192F           = 2.16.840.1.101.3.4.3.38
+hash_slhdsa_sha2_192f           = ${HASH_SLHDSA_SHA2_192F}
+HASH_SLHDSA_SHA2_256S           = 2.16.840.1.101.3.4.3.39
+hash_slhdsa_sha2_256s           = ${HASH_SLHDSA_SHA2_256S}
+HASH_SLHDSA_SHA2_256F           = 2.16.840.1.101.3.4.3.40
+hash_slhdsa_sha2_256f           = ${HASH_SLHDSA_SHA2_256F}
+HASH_SLHDSA_SHAKE_128S          = 2.16.840.1.101.3.4.3.41
+hash_slhdsa_shake_128s          = ${HASH_SLHDSA_SHAKE_128S}
+HASH_SLHDSA_SHAKE_128F          = 2.16.840.1.101.3.4.3.42
+hash_slhdsa_shake_128f          = ${HASH_SLHDSA_SHAKE_128F}
+HASH_SLHDSA_SHAKE_192S          = 2.16.840.1.101.3.4.3.43
+hash_slhdsa_shake_192s          = ${HASH_SLHDSA_SHAKE_192S}
+HASH_SLHDSA_SHAKE_192F          = 2.16.840.1.101.3.4.3.44
+hash_slhdsa_shake_192f          = ${HASH_SLHDSA_SHAKE_192F}
+HASH_SLHDSA_SHAKE_256S          = 2.16.840.1.101.3.4.3.45
+hash_slhdsa_shake_256s          = ${HASH_SLHDSA_SHAKE_256S}
+HASH_SLHDSA_SHAKE_256F          = 2.16.840.1.101.3.4.3.46
+hash_slhdsa_shake_256f          = ${HASH_SLHDSA_SHAKE_256F}
+
+MLKEM512                        = 2.16.840.1.101.3.4.4.1
+mlkem512                        = ${MLKEM512}
+MLKEM768                        = 2.16.840.1.101.3.4.4.2
+mlkem768                        = ${MLKEM768}
+MLKEM1024                       = 2.16.840.1.101.3.4.4.3
+mlkem1024                       = ${MLKEM1024}
+
+FALCON512                       = 1.3.9999
+falcon512                       = ${FALCON512}
+FALCON1024                      = 1.3.9999.3.9
+falcon1024                      = ${FALCON1024}
+
+NTRUHPS2048509                  = 1.3.6.1.4.1.22554.5.5.1
+ntruhps2048509                  = ${NTRUHPS2048509}
+NTRUHPS2048677                  = 1.3.6.1.4.1.22554.5.5.2
+ntruhps2048677                  = ${NTRUHPS2048677}
+NTRUHPS4096821                  = 1.3.6.1.4.1.22554.5.5.3
+ntruhps4096821                  = ${NTRUHPS4096821}
+NTRUHPS40961229                 = 1.3.6.1.4.1.22554.5.5.5
+ntruhps40961229                 = ${NTRUHPS40961229}
+NTRUHRSS701                     = 1.3.6.1.4.1.22554.5.5.4
+ntruhrss701                     = ${NTRUHRSS701}
+NTRUHRSS1373                    = 1.3.6.1.4.1.22554.5.5.6
+ntruhrss1373                    = ${NTRUHRSS1373}
+
+# ----------  Composite, hybrid & prototype OIDs  ----------
+ID_MLDSA44_RSA2048_PSS          = 2.16.840.1.114027.80.8.1.21
+id_mldsa44_rsa2048_pss          = ${ID_MLDSA44_RSA2048_PSS}
+ID_MLDSA44_RSA2048_PKCS15       = 2.16.840.1.114027.80.8.1.22
+id_mldsa44_rsa2048_pkcs15       = ${ID_MLDSA44_RSA2048_PKCS15}
+ID_MLDSA44_ED25519              = 2.16.840.1.114027.80.8.1.23
+id_mldsa44_ed25519              = ${ID_MLDSA44_ED25519}
+ID_MLDSA44_ECDSA_P256           = 2.16.840.1.114027.80.8.1.24
+id_mldsa44_ecdsa_p256           = ${ID_MLDSA44_ECDSA_P256}
+ID_MLDSA65_RSA3072_PSS          = 2.16.840.1.114027.80.8.1.26
+id_mldsa65_rsa3072_pss          = ${ID_MLDSA65_RSA3072_PSS}
+ID_MLDSA65_RSA3072_PKCS15       = 2.16.840.1.114027.80.8.1.27
+id_mldsa65_rsa3072_pkcs15       = ${ID_MLDSA65_RSA3072_PKCS15}
+ID_MLDSA65_RSA4096_PSS          = 2.16.840.1.114027.80.8.1.34
+id_mldsa65_rsa4096_pss          = ${ID_MLDSA65_RSA4096_PSS}
+ID_MLDSA65_RSA4096_PKCS15       = 2.16.840.1.114027.80.8.1.35
+id_mldsa65_rsa4096_pkcs15       = ${ID_MLDSA65_RSA4096_PKCS15}
+ID_MLDSA65_ECDSA_P384           = 2.16.840.1.114027.80.8.1.28
+id_mldsa65_ecdsa_p384           = ${ID_MLDSA65_ECDSA_P384}
+ID_MLDSA65_ECDSA_BRAINPOOLP256R1= 2.16.840.1.114027.80.8.1.29
+id_mldsa65_ecdsa_brainpoolp256r1= ${ID_MLDSA65_ECDSA_BRAINPOOLP256R1}
+ID_MLDSA65_ED25519              = 2.16.840.1.114027.80.8.1.30
+id_mldsa65_ed25519              = ${ID_MLDSA65_ED25519}
+ID_MLDSA87_ECDSA_P384           = 2.16.840.1.114027.80.8.1.31
+id_mldsa87_ecdsa_p384           = ${ID_MLDSA87_ECDSA_P384}
+ID_MLDSA87_ECDSA_BRAINPOOLP384R1= 2.16.840.1.114027.80.8.1.32
+id_mldsa87_ecdsa_brainpoolp384r1= ${ID_MLDSA87_ECDSA_BRAINPOOLP384R1}
+ID_MLDSA87_ED448                = 2.16.840.1.114027.80.8.1.33
+id_mldsa87_ed448                = ${ID_MLDSA87_ED448}
+ID_HASH_MLDSA44_RSA2048_PSS_SHA256 = 2.16.840.1.114027.80.8.1.40
+id_hash_mldsa44_rsa2048_pss_sha256 = ${ID_HASH_MLDSA44_RSA2048_PSS_SHA256}
+
+# ----------  OQS provider “hybrid” & misc. (generated from your table) ----------
+MLDSA44_PSS2048                  = 2.16.840.1.114027.80.8.1.1
+mldsa44_pss2048                  = ${MLDSA44_PSS2048}
+MLDSA44_RSA2048                  = 2.16.840.1.114027.80.8.1.2
+mldsa44_rsa2048                  = ${MLDSA44_RSA2048}
+MLDSA44_ED25519                  = 2.16.840.1.114027.80.8.1.3
+mldsa44_ed25519                  = ${MLDSA44_ED25519}
+MLDSA44_P256                     = 2.16.840.1.114027.80.8.1.4
+mldsa44_p256                     = ${MLDSA44_P256}
+MLDSA44_BP256                    = 2.16.840.1.114027.80.8.1.5
+mldsa44_bp256                    = ${MLDSA44_BP256}
+
+P256_MLDSA44                     = 1.3.9999.7.5
+p256_mldsa44                     = ${P256_MLDSA44}
+RSA3072_MLDSA44                  = 1.3.9999.7.6
+rsa3072_mldsa44                  = ${RSA3072_MLDSA44}
+P384_MLDSA65                     = 1.3.9999.7.7
+p384_mldsa65                     = ${P384_MLDSA65}
+P521_MLDSA87                     = 1.3.9999.7.8
+p521_mldsa87                     = ${P521_MLDSA87}
+
+# -- Falcon, SPHINCS+, Mayo, CROSS, OV, …  (all auto‑expanded) --
+FALCONPADDED512                  = 1.3.9999.3.16
+falconpadded512                  = ${FALCONPADDED512}
+P256_FALCONPADDED512             = 1.3.9999.3.17
+p256_falconpadded512             = ${P256_FALCONPADDED512}
+RSA3072_FALCONPADDED512          = 1.3.9999.3.18
+rsa3072_falconpadded512          = ${RSA3072_FALCONPADDED512}
+FALCONPADDED1024                 = 1.3.9999.3.19
+falconpadded1024                 = ${FALCONPADDED1024}
+P521_FALCONPADDED1024            = 1.3.9999.3.20
+p521_falconpadded1024            = ${P521_FALCONPADDED1024}
+
+SPHINCSSHA2128FSIMPLE            = 1.3.9999.6.4.13
+sphincssha2128fsimple            = ${SPHINCSSHA2128FSIMPLE}
+P256_SPHINCSSHA2128FSIMPLE       = 1.3.9999.6.4.14
+p256_sphincssha2128fsimple       = ${P256_SPHINCSSHA2128FSIMPLE}
+RSA3072_SPHINCSSHA2128FSIMPLE    = 1.3.9999.6.4.15
+rsa3072_sphincssha2128fsimple    = ${RSA3072_SPHINCSSHA2128FSIMPLE}
+SPHINCSSHA2128SSIMPLE            = 1.3.9999.6.4.16
+sphincssha2128ssimple            = ${SPHINCSSHA2128SSIMPLE}
+P256_SPHINCSSHA2128SSIMPLE       = 1.3.9999.6.4.17
+p256_sphincssha2128ssimple       = ${P256_SPHINCSSHA2128SSIMPLE}
+RSA3072_SPHINCSSHA2128SSIMPLE    = 1.3.9999.6.4.18
+rsa3072_sphincssha2128ssimple    = ${RSA3072_SPHINCSSHA2128SSIMPLE}
+
+##############################################################################
+#  END OF LIST — append additional OIDs below following the same template   #
+##############################################################################

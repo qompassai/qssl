@@ -1,0 +1,19 @@
+[tsa]
+default_tsa             = tsa_qompass
+[tsa_qompass]
+dir                     = /etc/pki/qompass-ca
+serial                  = $dir/tsaserial
+crypto_device           = builtin
+signer_cert             = $dir/tsacert.pem
+signer_key              = $dir/private/tsakey.pem
+certs                    = $dir/cacert.pem
+signer_digest           = sha256
+default_policy          = tsa_policy1
+other_policies          = tsa_policy2, tsa_policy3
+digests                 = sha256, sha384, sha512
+accuracy                = secs:1, millisecs:500, microsecs:100
+clock_precision_digits  = 0
+ordering                = yes
+tsa_name                = yes
+ess_cert_id_chain       = no
+ess_cert_id_alg         = sha256
