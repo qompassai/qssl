@@ -9,71 +9,7 @@
     <img src="https://img.shields.io/badge/license-Q--CDA-lightgrey.svg" alt="License: Q-CDA">
   </a>
 </p>
-<!-- zenodo-metadata
-{
-  "title": "qtemplate",
-  "description": "A software project at the intersection of AI, Quantum, and Healthcare.",
-  "license": ["AGPL-3.0", "Q-CDA-1.0"],
-  "language": "eng",
-  "upload_type": "software",
-  "access_right": "open",
-  "creators": [
-    {
-      "name": "Porter, Matthew A.",
-      "affiliation": "Qompass AI",
-      "orcid": "https://orcid.org/0000-0002-0302-4812"
-    }
-  ],
-  "keywords": [
-    "AI",
-    "Quantum",
-    "Post-Quantum Cryptography",
-    "Healthcare",
-    "Medical Education",
-    "Post-Quantum AI"
-  ],
-  "communities": [
-    {"identifier": "qompassai"}
-  ],
-  "contributors": [
-    {
-      "name": "Qompass AI",
-      "type": "Sponsor"
-    }
-  ]
-}
--->
 
----
-
-## 📄 Cite this Repository
-
-If you use this project, please cite it as:
-
-> Matthew A. Porter (2025). **<reponame>**. Zenodo. [https://doi.org/10.5281/zenodo.XXXXX](https://doi.org/10.5281/zenodo.XXXXX)
-
-Or in BibTeX format:
-
-```bibtex
-@software{porter_<reponame>_2025,
-  author       = {Matthew A. Porter},
-  title        = {<reponame>},
-  year         = {2025},
-  publisher    = {Zenodo},
-  version      = {v${RELEASE_DATE}},
-  doi          = {10.5281/zenodo.XXXXX},
-  url          = {https://doi.org/10.5281/zenodo.XXXXX}
-}
-
-
-### 📄 <reponame>
-
-- [Qompass Diver](https://github.com/qompassai/Diver)
-- [Qompass rose.nvim](https://github.com/qompassai/rose.nvim)
-- [Qompass blaze.nvim](https://github.com/qompassai/blaze.nvim)
-- [Qompass blaze-ts.nvim](https://github.com/qompassai/blaze-ts.nvim)
-
----
 
 <details id="Contact">
   <summary><strong>Contact Qompass AI</strong></summary>
@@ -174,98 +110,10 @@ Or in BibTeX format:
 </div>
 </details>
 
-<details id="FAQ">
-  <summary><strong>Frequently Asked Questions</strong></summary>
-
-### Q: How do you mitigate against bias?
-
-**TLDR - we do math to make AI ethically useful**
-
-### A: We delineate between mathematical bias (MB) - a fundamental parameter in neural network equations - and algorithmic/social bias (ASB). While MB is optimized during model training through backpropagation, ASB requires careful consideration of data sources, model architecture, and deployment strategies. We implement attention mechanisms for improved input processing and use legal open-source data and secure web-search APIs to help mitigate ASB. 
-
- [AAMC AI Guidelines | One way to align AI against ASB](https://www.aamc.org/about-us/mission-areas/medical-education/principles-ai-use)
-
- ### AI Math at a glance
-
-## Forward Propagation Algorithm
-
-$$
-y = w_1x_1 + w_2x_2 + ... + w_nx_n + b
-$$
-
-Where:
-
-- $y$ represents the model output
-- $(x_1, x_2, ..., x_n)$ are input features
-- $(w_1, w_2, ..., w_n)$ are feature weights
-- $b$ is the bias term
-### Neural Network Activation
-
-For neural networks, the bias term is incorporated before activation:
-
-$$
-z = \sum_{i=1}^{n} w_ix_i + b
-$$
-$$
-a = \sigma(z)
-$$
-
-Where:
-- $z$ is the weighted sum plus bias
-- $a$ is the activation output
-- $\sigma$ is the activation function
-
-### Attention Mechanism- aka what makes the Transformer (The "T" in ChatGPT) powerful
-
-* [Attention High level overview video](https://www.youtube.com/watch?v=fjJOgb-E41w)
-
-* [Attention Is All You Need Arxiv Paper](https://arxiv.org/abs/1706.03762)
-
-The Attention mechanism equation is:
-
-$$
-\text{Attention}(Q, K, V) = \text{softmax}\left( \frac{QK^T}{\sqrt{d_k}} \right) V
-$$
-
-Where:
-- $Q$ represents the Query matrix
-- $K$ represents the Key matrix
-- $V$ represents the Value matrix
-- $d_k$ is the dimension of the key vectors
-- $\text{softmax}(\cdot)$ normalizes scores to sum to 1
-
-### Q: Do I have to buy a Linux computer to use this? I don't have time for that!
-### A: No. You can run Linux and/or the tools we share alongside your existing operating system:
-    
-* Windows users can use Windows Subsystem for Linux [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
-* Mac users can use [Homebrew](https://brew.sh/)
-* The code-base instructions were developed with both beginners and advanced users in mind.
-
-### Q: Do you have to get a masters in AI?
-### A: Not if you don't want to. To get competent enough to get past ChatGPT dependence at least, you just need a computer and a beginning's mindset. Huggingface is a good place to start. 
-* [Huggingface](https://docs.google.com/presentation/d/1IkzESdOwdmwvPxIELYJi8--K3EZ98_cL6c5ZcLKSyVg/edit#slide=id.p)
-
-### Q: What makes a "small" AI model?
-### A: AI models ~=10 billion(10B) parameters and below. For comparison, OpenAI's GPT4o contains approximately 200B parameters.
-
-</details>
-
-<details id="Zenodo DOI">
-  <summary><strong>Digital Object Identifier (DOI) for public transparency and accountability</strong></summary>
-Badge
-
-
-```markdown
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxx)
-```
-
----
-
-- See `.zenodo.json` for metadata, authorship, licensing, and related software attribution.
-</details>
-
+<
 ## 🧭 Attribution
 
+[OpenSSL](https://github.com/openssl/openssl)
 
 
 <details id="Dual-License Notice">
@@ -317,11 +165,5 @@ By offering both open source and commercial licensing options, we strive to crea
 [^8]: [Minneapolis school district says data breach affected more than 100,000 people](https://therecord.media/minneapolis-schools-say-data-breach-affected-100000/)
 </details>
 
-
-
-![Repository Views](https://komarev.com/ghpvc/?username=REPO_PLACEHOLDER)
-
-<p align="center">
-  <i>Last Updated: <timestamp></i>
-</p>
+![Organization Views](https://komarev.com/ghpvc/?username=qompassai)
 
