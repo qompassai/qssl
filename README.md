@@ -7,6 +7,8 @@
 <h3> Qompass AI on OpenSSL </h3>
 
 ![Repository Views](https://komarev.com/ghpvc/?username=qompassai-qssl)
+![GitHub all releases](https://img.shields.io/github/downloads/qompassai/qssl/total?style=flat-square)
+
   <a href="https://www.openssl.org/">
   <img src="https://img.shields.io/badge/OpenSSL-721412?style=for-the-badge&logo=openssl&logoColor=white" alt="OpenSSL">
 </a>
