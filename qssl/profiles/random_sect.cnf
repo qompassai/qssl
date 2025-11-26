@@ -1,3 +1,0 @@
-[random]
-random                  = CTR-DRBG
-seed                    = JITTER

@@ -1,9 +1,0 @@
-[ server_cert ]         # RFC6961 TLS Multistaple Status Request (SCT)
-basicConstraints        = CA:FALSE
-keyUsage                = critical,digitalSignature,keyEncipherment
-extendedKeyUsage        = serverAuth,clientAuth
-subjectKeyIdentifier    = hash
-authorityKeyIdentifier  = keyid,issuer
-authorityInfoAccess     = OCSP;URI:http://ocsp.qompass.ai
-crlDistributionPoints   = URI:http://crl.qompass.ai/qompass.crl
-1.3.6.1.5.5.7.1.24      = DER:30:03:02:01:05  
