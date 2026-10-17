@@ -1,20 +1,47 @@
 #!/usr/bin/env bash
 set -euo pipefail
-OPENSSL_CONF=${OPENSSL_CONF:-/opt/qai/qompassl/ssl/openssl.cnf}
-OPENSSL_MODULES=${OPENSSL_MODULES:-/opt/qai/qompassl/lib64/ossl-modules}
-export OPENSSL_CONF OPENSSL_MODULES
+# Defaults: the historical /opt/qai build tree when present, otherwise the
+# system OpenSSL configuration (empty OPENSSL_CONF). Explicit environment
+# always wins. (Wave 2 fix: the old defaults made the script unrunnable
+# anywhere but one machine.)
+if [[ -z "${OPENSSL_CONF+x}" && -f /opt/qai/qompassl/ssl/openssl.cnf ]]; then
+    OPENSSL_CONF=/opt/qai/qompassl/ssl/openssl.cnf
+fi
+if [[ -z "${OPENSSL_MODULES+x}" && -d /opt/qai/qompassl/lib64/ossl-modules ]]; then
+    OPENSSL_MODULES=/opt/qai/qompassl/lib64/ossl-modules
+fi
+export OPENSSL_CONF="${OPENSSL_CONF:-}" OPENSSL_MODULES="${OPENSSL_MODULES:-}"
 PROVIDERS=(-provider default)
 WORKDIR=$(mktemp -d)
 trap 'rm -rf "$WORKDIR"' EXIT
 REPORT="$WORKDIR/report.md"
 printf "| Algorithm | Key-gen | Sign | Verify | Notes |\n" >"$REPORT"
 printf "|-----------|--------|------|--------|-------|\n" >>"$REPORT"
+# Fail loudly if openssl cannot enumerate algorithms (e.g. a malformed
+# OPENSSL_CONF). The old process-substitution form swallowed this failure
+# and reported an empty table with exit 0. (Wave 2 fix.)
+ALG_LIST=$(openssl list -signature-algorithms "${PROVIDERS[@]}") || {
+    echo "error: openssl list -signature-algorithms failed" >&2
+    exit 1
+}
+# `openssl list -signature-algorithms` prints entries like
+#   { 2.16.840.1.101.3.4.3.17, id-ml-dsa-44, ML-DSA-44, MLDSA44 } @ default
+# The canonical key-algorithm name is the LAST name inside the braces (or
+# the bare token). The old extraction fed the whole "{ oid, names }" blob
+# to genpkey, so every row failed. (Wave 2 fix.)
 mapfile -t ALGS < <(
-    openssl list -signature-algorithms "${PROVIDERS[@]}" |
+    printf '%s\n' "$ALG_LIST" |
         awk -F '@' '{print $1}' |
+        sed 's/[{}]//g' |
+        awk -F ',' '{print $NF}' |
         sed 's/^ *//;s/ *$//' |
+        grep -v '^$' |
         sort -u
 )
+if [[ ${#ALGS[@]} -eq 0 ]]; then
+    echo "error: no signature algorithms reported by openssl" >&2
+    exit 1
+fi
 for ALG in "${ALGS[@]}"; do
     KEY="$WORKDIR/${ALG// /_}.key"
     PUB="$WORKDIR/${ALG// /_}.pub"
